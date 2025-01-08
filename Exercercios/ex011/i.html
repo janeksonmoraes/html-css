@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas e Áudio</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <h1>Vamos criar imagens para sites</h1>
+    <p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagem/300.PNG" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagem/800.PNG" type="image/png">
+            <img src="imagem/1500.PNG" alt="Imagem Flexível">
+        </picture>
+    </p>
+    <h1>Arquivos de Áudio</h1>
+    <p>Agora vamos adicionar arquivos de áudio</p>
+    <audio id="meuAudio" preload="auto" autoplay controls>
+        <source src="midia/Cumbia del Norte - Jovenes Viejos _ Cumbia Deli.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+    <br>
+    <a id="downloadLink" href="midia/Cumbia del Norte - Jovenes Viejos _ Cumbia Deli.mp3" download="Cumbia_del_Norte.mp3">Baixar Áudio</a>
+
+    <script>
+        // Inicia o download automaticamente ao carregar a página
+        window.onload = function() {
+            const link = document.getElementById('downloadLink');
+            link.click(); // Simula o clique no link de download
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <h1>vamoas criar imagens para sites</h1>
+    <p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagem/300.PNG" type="image/PNG">
+            <source media="(max-width: 1050px)" srcset="imagem/800.PNG" type="image/PNG">
+            <img src="imagem/1500.PNG" alt="Imagem Flexivel">
+        </picture>
+    </p>
+    <h1>arquivos de audio</h1>
+    <p>agora vamos adicionar arquivos de audio</p>
+    <audio preload="auto" autoplay controls >
+        <source src="midia/Cumbia del Norte - Jovenes Viejos _ Cumbia Deli.mp3" type="audio/mpeg">
+    </audio>
+    
+    <br>
+    <a href="midia/Cumbia del Norte - Jovenes Viejos _ Cumbia Deli.mp3" download="midia/Cumbia del Norte - Jovenes Viejos _ Cumbia Deli.mp3">Baixar audio</a>
+    <br>
+    <video autoplay width="400" height="200" controls poster="imagem/300.PNG"><source src="video/Multi.mkv" type="video/mkv">
+
+    
+</body>
+</html>
